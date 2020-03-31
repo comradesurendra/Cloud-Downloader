@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Save to Drive Demo: Explicit Load</title>
+</head>
+
+<body>
+
+    <img src="">
+   
+    <script type="text/javascript">
+        var instaReq = new XMLHttpRequest();
+        var data;
+        
+        instaReq.onload = function () {
+            let parser, DOM;
+
+            parser = new DOMParser();
+            DOM = parser.parseFromString(this.responseText, 'text/html');
+
+            let links = DOM.querySelectorAll('#video-title');
+        
+            console.log(DOM); 
+
+        }
+        
+        instaReq.open('GET', 'https://cors-anywhere.herokuapp.com/https://www.youtube.com/results?q=tushar%20sharma');
+        instaReq.send();
+    </script>
+</body>
+
+</html>
