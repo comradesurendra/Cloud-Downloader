@@ -14,4 +14,4 @@ Storage will be done by own bandwidth.
 - Some of the links blocked by network administrator? Yes, Cloud Downloader
 will bypass those links and download your content safely.
 
-Project link : https://github.com/comradesurendra/Cloud-Downloader/deployments
+Project link : https://comradesurendra.github.io/Cloud-Downloader/
